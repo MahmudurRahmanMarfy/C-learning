@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+float h,b;
+scanf("%f%f", &h, &b);
+0.5*h*b;
+
+printf("Area=%f", 0.5*h*b);
+
+return 0;
+}

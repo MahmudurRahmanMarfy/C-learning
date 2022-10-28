@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+float c,f;
+scanf("%f", &c);
+f=((((c/5))*9)+32);
+
+printf("Farenhite=%f", f=((((c/5))*9)+32));
+
+return 0;
+}
