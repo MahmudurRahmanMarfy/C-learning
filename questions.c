@@ -3,11 +3,10 @@
 
 int main()
 {
-int i, n, c;
-scanf("%d", &n);
+int i;
 for(i=1; i<=10; i++)
 {
-    printf("%d\n", c=n*i);
+    printf("ei naw \n");
 }
 
 return 0;

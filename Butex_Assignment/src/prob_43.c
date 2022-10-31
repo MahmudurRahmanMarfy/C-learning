@@ -1,7 +1,32 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
+	int row, col, n;
+	scanf("%d", &n);
+	for (row = 1; row <= n; row++)
+	{
+		for (col = 1; col <= n - row; col++)
+		{
+			printf(" ");
+		}
+
+		for (col = 1; col <= row; col++)
+		{
+			// 	if (n + 1 - col <= row)
+			// 	{
+			// 		printf("*");
+			// 	}
+			// 	else
+			// 	{
+			// 		printf(" ");
+			// 	}
+
+			printf("*");
+		}
+
+		printf("\n", row);
+	}
 
 	return 0;
 }
