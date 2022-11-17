@@ -1,28 +1,30 @@
-//15. Write a c program to check whether a number is a strong number or not.
+//6. write a c program to reverse an array
 #include<stdio.h>
 
 int main()
 {
-int num, i, rem, temp, sum=0, rslt;
-scanf("%d", &num);
+    int n;
+    scanf("%d", &n);
 
-temp=num;
-while(temp!=0)
-{
-    rem=temp%10;
-    rslt=1;
-    for(i=1; i<=rem; i++)
-    {
-        rslt=rslt*i;
-    }
-  sum = sum+rslt;
-  temp=temp/10;
-}
-if(num==sum)
-  {
-    printf("Is strong number %d\n", sum);
-  }
-  else
-    printf("Is not strong number %d", sum);
-return 0;
+    int i;
+    float array[n], temp;
+
+    for(i=0; i<n; i++)
+        {
+            scanf("%f", &array[i]);
+        }
+
+    for(i=0; i<n/2; i++)
+        {
+            temp = array[i];
+            array[i] = array[n-1-i];
+            array[n-1-i] = temp;
+        }
+
+    printf("reversed array:\t");
+    for(i=0; i<n; i++)
+        {
+            printf("%f ", array[i]);
+        }
+    return 0;
 }

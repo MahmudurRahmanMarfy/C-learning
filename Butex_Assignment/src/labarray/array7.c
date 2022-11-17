@@ -21,7 +21,7 @@ int main()
                 array[j] = temp;
             }
         }
-        printf("%f", array[i]);
+        printf("%f\t", array[i]);
     }
     return 0;
 }
