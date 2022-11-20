@@ -29,7 +29,7 @@ int main()
     {
         for (j = 0; j < row; j++)
         {
-            printf("% ", tarray[i][j]);
+            printf("%f ", tarray[i][j]);
         }
         printf("\n");
     }

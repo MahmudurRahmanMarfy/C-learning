@@ -13,9 +13,9 @@ int main()
         scanf("%f", &array[i]);
     }
 
-    printf("Sorted array :\n");
+    printf("Sorted array in shell style :\n");
 
-    for (gap = size / 2; gap >= 1; gap / 2)
+    for (gap = size / 2; gap >= 1; gap /= 2)
     {
         for (j = gap; j < size; j++)
         {
@@ -33,8 +33,13 @@ int main()
                 }
 
             }
-
-        }
+    
+        } 
+            
+    }
+    
+    for(i=0; i<size; i++)
+    {
         printf("%g ", array[i]);
     }
 
