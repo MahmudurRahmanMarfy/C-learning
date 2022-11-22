@@ -1,42 +1,43 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int size, i, j, temp, gap;
+    int gap,i,j,n,temp;
 
-    printf("Size of the array : ");
-    scanf("%d", &size);
+    printf("Enter the integer number=");
+    scanf("%d",&n);
 
-    float array[size];
+    int a[n];
 
-    for (i = 0; i < size; i++)
+    for(i=0;i<n;i++)
     {
-        scanf("%f", &array[i]);
+    scanf("%d",&a[i]);
     }
+     for(gap=n/2;gap>=1;gap/=2)
+     {
+         for(j=gap;j<n;j++)
+         {
+             for(i=j-gap;i>=0;i=i-gap)
+                {
+                  if(a[i+gap]>a[i])
+                  {
+                      break;
+                  }
+                    else
+                    {
+                        temp=a[i];
+                        a[i]=a[i+gap];
+                        a[i+gap]=temp;
+                    }
+                }
+         }
+     }
 
-    printf("Sorted array :\n");
+     printf("Sorted array in ascending order is :\n");
 
-    for (gap = size / 2; gap >= 1; gap / 2)
-    {
-        for (j = gap; j < size; j++)
+     for(i=0;i<n;i++)
         {
-            for (i = j - gap; i >= 0; i = i - gap)
-            {
-                if (array[i + gap] > array[i])
-                {
-                    break;
-                }
-                else
-                {
-                    temp = array[i + gap];
-                    array[i + gap] = array[i];
-                    array[i] = temp;
-                }
-
-            }
-
+            printf("%d ",a[i]);
         }
-        printf("%g ", array[i]);
-    }
 
-    return 0;
+return 0;
 }
