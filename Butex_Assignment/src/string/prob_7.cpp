@@ -5,7 +5,7 @@
 
 int main()
 {
-	char a[100], b[100], c[100], d[100] ;
+	char a[100], b[100], c[100];
 	printf("A\n");
 	gets(a);
 	printf("B\n");
