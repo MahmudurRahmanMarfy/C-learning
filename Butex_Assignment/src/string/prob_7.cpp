@@ -7,24 +7,17 @@ int main()
 {
 	int i;
 	char a[100], b[100], c[100], d[100] ;
-	printf("A");
+	printf("A\n");
 	gets(a);
-	printf("B");
+	printf("B\n");
 	gets(b);
-	printf("c");
+	printf("c\n");
 	gets(c);
 	
+	strcat(a,b);
+	strcat(a,c);
 
-
-	for (i = 0; i < strlen(a) || i < strlen(b) || i < strlen(c) ; i++)
-	{		
-		d[i]=0;
-		d[i] = a[i] + b[i] + c[i];
-	}
-	for (i = 0; i < strlen(a) || i < strlen(b) || i < strlen(c) ; i++)
-	{
-			puts(d);
-	}
+	puts(a);
 	
 	return 0;
 } 

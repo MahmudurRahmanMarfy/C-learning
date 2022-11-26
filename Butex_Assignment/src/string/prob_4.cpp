@@ -33,7 +33,7 @@ int main()
 		{
 			whitespace++;
 		}
-		else if (a[i] == '*' || '/' || '+' || '-' || '$' || '%' || '&')
+		else
 		{
 			specialcharacter++;
 		}

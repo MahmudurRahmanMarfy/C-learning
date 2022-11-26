@@ -1,6 +1,6 @@
 //  2. Write a c program to count the frequency of a character in a string.
 
-#include<stdio.h>
+#include <stdio.h>
 #include <string.h>
 
 int main()
@@ -12,7 +12,7 @@ int main()
 	printf("Character for search:");
 	scanf("%c", &key);
 
-	count=0;
+	count = 0;
 
 	for (i = 0; i < strlen(a); i++)
 	{
@@ -21,7 +21,7 @@ int main()
 			count++;
 		}
 	}
-	
+
 	printf("Frequency = %d", count);
 
 	return 0;
