@@ -1,0 +1,10 @@
+1.	Write a program in C to display n terms of natural number and their sum.
+2.	Write a program in C to read 10 numbers from keyboard and find their sum and average.
+3.	Write a program in C to display the cube of the number upto given an integer.
+4.	Write a program in C to display the multiplication table of a given integer. 
+5.	Write a program in C to display the multiplication table vertically from 1 to n.
+6.	Write a program in C to display the pattern like right angle triangle using an asterisk.
+7.	Write a program in C to make such a pattern like right angle triangle with a number which will repeat a number in a row. 
+8.	Write a program in C to make such a pattern like a pyramid with an asterisk.
+9.	Write a program in C to make such a pattern like a pyramid with numbers increased by 1.  
+10.	Write a program in C to print the Floyd's Triangle.
